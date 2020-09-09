@@ -1,0 +1,112 @@
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+
+    <style>
+      main {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        height: 100%;
+      }
+
+      section {
+        display: flex;
+        flex-direction: column;
+        transition-duration: 500ms;
+        text-align: center;
+        margin: 5%;
+        border-style: solid;
+        border-radius: 25px;
+        border-color: rgba(0, 0, 0, 0);
+      }
+
+      section:hover {
+        cursor: pointer;
+        transition-duration: 500ms;
+        transform: scale(1.025);
+        box-shadow: 0px 0px 20px 0px black;
+      }
+      
+      i {
+        padding-bottom: 10%;
+      }
+
+      section > a {
+        color: white;
+        text-decoration: none;
+        text-align: center;
+      }
+
+      section > a > span {
+        font-weight: bold;
+        font-size: 2.3rem;
+      }
+
+      @media (max-width: 320px) {
+        main {
+          flex-direction: row;
+          flex-wrap: wrap;
+          justify-content: center;
+          font-size: 100%;
+        }
+
+      section > a > span {
+        font-size: 100%;
+      }        
+
+        section > a {
+          padding: 0;
+          width: 100%;
+        }
+      }
+      @media (max-width: 1536px) {
+        main {
+          flex-direction: row;
+          flex-wrap: wrap;
+        }
+        section > a {
+          padding: 0;
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section>
+        <a href="https://github.com/officialpenta/Portfolio">
+          <i class="fab fa-html5 fa-3x"></i>
+          <br />
+          <span>Name</span>
+          <br />
+          Portfolio
+          <br />
+          <span>Description</span>
+          <br />
+          A personal portfolio which represents a resume
+        </a>
+      </section>
+      <section>
+        <a href="https://github.com/officialpenta/WebPresentation">
+          <i class="fab fa-html5 fa-3x"></i>
+          <br />
+          <span>Name</span>
+          <br />
+          WebPresentation
+          <br />
+          <span>Description</span>
+          <br />
+          This is a website I made in order of my school. :) Have fun looking at
+          it
+        </a>
+      </section>
+    </main>
+  </body>
+</html>
