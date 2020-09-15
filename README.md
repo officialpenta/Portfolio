@@ -1,2 +1,2 @@
 # Portfolio
- A repositor which represents a resume
+ A website which represents a resume
